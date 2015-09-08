@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>N-Queens Problem</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+
+</head>
+<body>
+
+</body>
+
+<div>
+	<button type="button" onclick="start();">
+		Click me to start
+	</button>
+</div>
+
+<div>
+	<button type="button" onclick="loop();">
+		Click me to show
+	</button>
+</div>
+
+
+<script type="text/javascript">
+	
+	function start(){
+		document.write("Starting backtracking...<br>");
+		matrix = initMatrix();
+		printMatrix(matrix);
+		document.write("<div><button type=\"button\" onclick=\"loop();\">Click me to show</button></div>");
+	}
+
+	function loop(){
+		backtracking(matrix);
+	}
+
+	
+</script>
+
+<script src="backtracking.js" type="text/javascript"></script>
+
+</html>
